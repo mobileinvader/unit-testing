@@ -2,8 +2,7 @@
 //  RocketTests.swift
 //  UnitTestingDemoTests
 //
-//  Created by Kristijan Kralj on 18/08/2019.
-//  Copyright © 2019 Kristijan Kralj. All rights reserved.
+//  Created by Kristijan Kralj on 23.01.2021.
 //
 
 import XCTest
@@ -11,13 +10,13 @@ import XCTest
 
 class RocketTests: XCTestCase {
 
-    func test_flyToTheMoon_goes_to_the_moon() {
-        let rocket = Rocket()
-        
-        rocket.flyToTheMoon()
-        
-        XCTAssertEqual(29000, rocket.speed)
-        XCTAssertTrue(rocket.enginesAreWorking)
-        XCTAssertEqual("To the Moon!", rocket.direction)
-    }
+  func test_flyToTheMoon_goes_to_the_moon() {
+    let rocket = Rocket()
+    
+    rocket.flyToTheMoon()
+    
+    XCTAssertEqual(29000, rocket.speed)
+    XCTAssertTrue(rocket.enginesAreWorking)
+    XCTAssertEqual("To the Moon!", rocket.direction)
+  }
 }
